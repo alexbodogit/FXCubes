@@ -101,7 +101,7 @@ public class PlayGround extends Group {
         for (int x = 0; x < numBoxH; x++) {
             for (int y = 0; y < numBoxV; y++) {
 
-                WritableImage newImage = new WritableImage(imageSnap.getPixelReader(), currentX, currentY, sizeBox, sizeBox);
+                WritableImage newImage = new WritableImage(reader, currentX, currentY, sizeBox, sizeBox);
 
                 PhongMaterial phong = (PhongMaterial) boxes[x][y].getMaterial();
 
